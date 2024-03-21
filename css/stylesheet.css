@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+   
+    font-family: "pt-sans",sans-serif;
+    
+}
+.htab{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+    background: #c013c0;
+    background: linear-gradient(to top right, #cf14d5 9%, #1325aa 17%, #1b9847 69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+.htab2{
+    color: #1b9847;
+    size: 2rem;
+}
+
+.afterbefore::after{
+    position: absolute;
+    content: "";
+   width: 0;
+   height: 0;
+   bottom: 0;
+   right: 0;
+   background-color: green;
+   opacity: 0;
+   transition: 1s;
+  
+
+}
+.afterbefore:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+.par{
+    position: relative;
+}
+.afterbefore::before{
+    position: absolute;
+    content: "";
+   width: 0;
+   height: 0;
+   top: 0;
+   left: 0;
+   background-color: green;
+   opacity: 0;
+   transition: 1s;
+  
+}
+.afterbefore:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+.imagescroll{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagescroll2{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/bg1.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.item{
+    position: relative;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(66, 71, 69, 0.5);
+  z-index: 1;
+}
+.itemcon{
+    transition: 1s;
+}
+.itemcon:hover{
+    transform: scale(.9);
+}
+.itemcon:hover .overlay{
+    background-color: #1b9847;
+    opacity: .3;
+}
+.text-change{
+    color: white;
+}
+.text-change:hover{
+   color: black;
+}
+.shadowbox{
+    box-shadow: 1px 1px 50px rgb(124, 199, 124)
+}
+
+
+.fristbtn{
+    display: none;
+}
+.image-clip{
+    width: 300px;
+    height: 350px;
+    
+}
+
+.fristbtn:hover{
+    color: #1b9847;
+    background-color: white;
+}
+.image-clip2{
+    width: 300px;
+    height: 350px;
+}
+   
+.outside-shadow-green{
+    box-shadow: 1px 1px 50px  rgb(134, 224, 185) ;
+    
+}
+.outside-shadow-yellow{
+    box-shadow: 1px 1px 50px  rgb(188, 215, 125) ;
+}
+.outside-shadow-pink{
+    box-shadow: 1px 1px 50px  rgb(219, 130, 211) ;
+}
+.outside-shadow-blue{
+    box-shadow: 1px 1px 50px  rgb(114, 175, 216) ;
+}
+/* .inside-shadow1{
+    box-shadow: 0px 1px 50px  rgb(219, 130, 211) inset;
+}
+.inside-shadow2{
+    box-shadow: 0px 1px 50px  rgb(114, 175, 216) inset;
+}
+.inside-shadow3{
+    box-shadow: 0px 1px 50px  rgb(188, 215, 125) inset;
+}
+.inside-shadow4{
+    box-shadow: 0px 1px 50px  rgb(134, 224, 185) inset;
+} */
+@media only screen and (min-width: 600px){
+    .image-clip{
+        width: 300px;
+        height: 300px;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 100%);
+    }
+    .image-clip2{
+        width: 300px;
+        height: 300px;
+        clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    }
+    .fristbtn{
+        margin-top: 50px;
+        color: black;
+        height: 30px;
+        line-height: 25px;
+        display: inline;
+        text-align: center;
+        padding: auto;
+    }
+    
+}
+.text-danger-max{
+    color: #d33a9b;
+    
+}
+.asideicon{
+    width: 55px;
+    height: 55px;
+    line-height: 50px; 
+    font-size: 45px;
+    color: #1b9847;
+}
+.asideicon:hover{
+    color: rgb(134, 224, 185);
+
+}
